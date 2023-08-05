@@ -42,4 +42,9 @@ cv.imshow('resize',resized)
 cropped = img[50:200,200:400]
 cv.imshow('cropped',cropped)
 
+blank = np.zeros(img.shape[:2],dtype='uint8')
+
+cv.imshow('blank',blank)
+
+
 cv.waitKey(0)
