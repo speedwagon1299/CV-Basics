@@ -19,7 +19,7 @@ print(f'{len(contours)} countours')
 
 # threshold
 ret, thresh = cv.threshold(gray,125,255,cv.THRESH_BINARY)   #ret is to take the first return type of retVal (idrk)
-#if density of pixel is below 125, its taken as black, density more than 255 its taken as white
+#if density of pixel is below 125, its taken as black, density more than 255 its taken as white     MAY HAVE INRANGE SUBSTITUTE
 cv.imshow('thresh',thresh)
 contours2, hierarchies = cv.findContours(thresh, cv.RETR_LIST, cv.CHAIN_APPROX_SIMPLE)
 print(f'{len(contours2)} countours')
